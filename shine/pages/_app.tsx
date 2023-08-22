@@ -32,7 +32,9 @@ const onboard = Onboard({
 
 
 const activeChain = "Cronos";
-const sdk = new ThirdwebSDK(Cronos);
+const sdk = new ThirdwebSDK(Cronos, {
+  clientId: "beb50f196f8946470dc38480e7c41dc2",
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
